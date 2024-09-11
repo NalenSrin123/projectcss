@@ -1,0 +1,508 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+}
+
+header{
+    width: 100%;
+    height: 120px;
+    background-color: rgb(0, 0, 0, 0.07);
+    position: absolute;
+    top: 0;
+    z-index: 11;
+}
+.header{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+.header .left-site{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .left-site .image{
+    width: 40%;
+    height: 100%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.header .left-site .image img{
+    width: 220px;
+}
+.header .left-site .menu{
+    width: 60%;
+    height: 100%;
+}
+.header .left-site .menu ul{
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.header .left-site .menu ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    opacity: 1.2;
+    position: relative;
+}
+.header .left-site .menu ul li a::before{
+    content:' ';
+    background-color: #fff;
+    width: 0%;
+    position: absolute;
+    height: 3px;
+    left: 0;
+    bottom: -2px;
+    display: block;
+    transition: 0.5s;
+    
+}
+.header .left-site .menu ul li:hover a::before{
+    width: 100%;
+}
+.header .right-site{
+    width: 50%;
+    height: 100%;
+    padding-right: 40px;
+}
+.header .right-site ul{
+    height: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 25px;
+}
+.header .right-site ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+}
+.header .right-site  ul li a::before{
+    content:' ';
+    background-color: #fff;
+    width: 0%;
+    position: absolute;
+    height: 3px;
+    left: 0;
+    bottom: -2px;
+    display: block;
+    transition: 0.5s;
+    
+}
+.header .right-site ul li:hover a::before{
+    width: 100%;
+}
+
+.content{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /* position: fixed; */
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),url('https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2019/12/home-new-bg-free-img.jpg');
+    /* background-size: cover; */
+    height: 100vh;
+    position:sticky;
+    top:0;
+    z-index: -111;
+    display: block;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)) */
+}
+.sub-title{
+    width: 30%;
+    position: absolute;
+    top: 250px;
+    left: 200px;
+   
+}
+
+.sub-title h1{
+    color: #fff;
+    font-size: 50px;
+}
+.sub-title h5{
+    color: #fff;
+    font-size: 25px;
+    margin-top: 20px;
+}
+.sub-title button{
+    margin-top: 30px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #fff;
+    margin-right: 20px;
+    color: #000;
+    font-size: 20px;
+    
+}
+.sub-title button:hover{
+    background-color: #000;
+    color: #fff;
+    
+}
+.sub-title button:nth-child(4){
+    background-color:transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+.sub-title #find:hover{
+    background-color: #fff;
+    color: #333;
+} 
+.menu-image{
+    width: 100%;
+    height: 150px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+.sub-card{
+    width: 100%;
+    margin: auto;
+    background-color: #fff;
+    display: flex;
+    padding-bottom: 100px;
+    
+}
+.sub-card .box-card{
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+.sub-card .box-card .card{
+    width: 33%;
+    height: 500px;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url('https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/women-fashion-free-img.jpg');
+    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-right: 20px;
+}
+.sub-card .box-card .card .title{
+    position: absolute;
+    top: 60%;
+    left: 50px;
+}
+.sub-card .box-card .card .title h3{
+    font-size: 25px;
+    color: #fff;
+}
+
+.sub-card .box-card .card .title p{
+    margin-top: 20px;
+    font-size: 18px;
+    opacity: 0.8;
+    color: #fff;
+    line-height: 25px;
+}
+.sub-card .box-card .card .title button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #000;
+    background-color: #fff;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+.sub-card .box-card .card1{
+    width: 33%;
+    height: 500px;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url('https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/men-fashion-free-img.jpg');
+    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-right: 20px;
+    
+}
+.sub-card .box-card .card1 .title{
+    position: absolute;
+    top: 60%;
+    left: 50px;
+}
+.sub-card .box-card .card1 .title h3{
+    font-size: 25px;
+    color: #fff;
+}
+
+.sub-card .box-card .card1 .title p{
+    margin-top: 20px;
+    font-size: 18px;
+    opacity: 0.8;
+    color: #fff;
+    line-height: 25px;
+}
+.sub-card .box-card .card1 .title button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #000;
+    background-color: #fff;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+.sub-card .box-card .card2{
+    width: 33%;
+    height: 500px;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)), url('https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2018/12/footwear-free-img.jpg');
+    background-size: cover;
+    background-position: left center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-right: 20px;
+}
+.sub-card .box-card .card2 .title{
+    position: absolute;
+    top: 60%;
+    left: 50px;
+}
+.sub-card .box-card .card2 .title h3{
+    font-size: 25px;
+    color: #fff;
+}
+
+.sub-card .box-card .card2 .title p{
+    margin-top: 20px;
+    font-size: 18px;
+    opacity: 0.8;
+    color: #fff;
+    line-height: 25px;
+}
+.sub-card .box-card .card2 .title button{
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #000;
+    background-color: #fff;
+    margin-top: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+.product{
+    width: 100%;
+    margin: auto;
+    background-color: rgb(243, 247, 247);
+    padding: 5%;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 20px;
+    position: relative;
+}
+.product .Featured{
+    position: absolute;
+    top: 30px;
+    left: 45%;
+    font-size: 30px;
+}
+.product .cards{
+    width: 100%;
+    height: 400px;
+    margin-top: 20px;
+    position: relative;
+    transition: 0.5s;
+}
+.product .cards .image{
+    width: 100%;
+    height: 70%;
+}
+.product .cards .image img{
+    width: 100%;
+    height: 100%;
+}
+.product .cards .body{
+    margin-top: 5px;
+    width: 100%;
+    height: 30%;
+}
+del,.category{
+    opacity: 0.8;
+    color: #000;
+}
+.product .cards i{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 7px;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+.product .cards:hover i{
+    
+    display: block;
+}
+
+.content1{
+    width: 100%;
+    height: 100vh;
+    /* position: relative; */
+    /* position: fixed; */
+    background-size: cover;
+    background-image: url('https://websitedemos.net/brandstore-02/wp-content/uploads/sites/150/2019/12/banner-03.jpg');
+    /* background-size: cover; */
+    height: 100vh;
+    position:sticky;
+    top:0;
+    z-index: -111;
+    display: block;
+}
+
+.sub-title1{
+    width: 30%;
+   height: 500px;
+   margin-left: 120px;
+   /* background-color: #fff; */
+   
+}
+
+.sub-title1 h1{
+    color: #fff;
+    font-size: 50px;
+}
+.sub-title1 h5{
+    color: #fff;
+    font-size: 25px;
+    margin-top: 20px;
+}
+.sub-title1 button{
+    margin-top: 30px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #fff;
+    margin-right: 20px;
+    color: #000;
+    font-size: 20px;
+    
+}
+.sub-title1 button:hover{
+    background-color: #000;
+    color: #fff;
+    
+}
+.icon{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+    background-color:rgb(243, 247, 247) ;
+   padding: 30px;
+}
+.icon .blockIcon{
+    margin-top: 50px;
+    width: 100%;
+}
+.icon .blockIcon img{
+    margin-left: 130px;
+    width: 80px;
+}
+.icon .blockIcon h5{
+    font-size: 20px;
+    color: #333;
+    text-align: center;
+}
+.icon .blockIcon p{
+    font-size: 18px;
+    opacity: 0.9;
+}
+.banner-title{
+    width: 100%;
+    height: 150px;
+    background-color: rgb(243, 247, 247) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top:1px solid gray;
+    border-bottom:1px solid gray;
+}
+footer{
+    width: 100%;
+    /* background-color: aqua; */
+    height: 350px;
+}
+footer .footer{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    height: 100%;
+    /* justify-content: center; */
+    align-items: center;
+}
+footer .footer .logo{
+    width: 33.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* background-color: #df1212; */
+    gap: 20px;
+}
+footer .footer .logo img{
+    width: 160px;
+}
+footer .footer .category{
+    width: 33.33%;
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+footer .footer .category .type ul{
+        list-style: none;
+}
+footer .footer .category .type ul li a{
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+    opacity: 0.9;
+}
+footer .footer .category .type h4{
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+footer .footer .subscribe{
+    width: 33.33%;
+    margin-left: 40px;
+}
+footer .footer .subscribe h4{
+    font-size:20px ;
+    margin-bottom: 15px;
+    /* margin-top: 15px; */
+}
+footer .footer .subscribe input{
+    border: none;
+    outline: none;
+    padding: 15px 25px;
+    border-radius: 10px;
+    border:  1px solid gray;
+}
+footer .footer .subscribe button{
+    padding: 11px 20px;
+    border: none;
+    font-size: 20px;
+    background-color: rgb(27, 37, 240);
+    color: #fff;
+    border-radius: 10px;
+    margin-top: 15px;
+}
